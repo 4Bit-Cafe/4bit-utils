@@ -26,12 +26,9 @@ jobs:
         
     - name: Publish 
       id: publish-lib
-      env:
-        GITHUB_TOKEN: ${{ secrets.WRITE_TOKEN_CLASSIC }}
       run: |
         git config --global user.email "bot@4bitcafe.com"
         git config --global user.name "Automated Release"
-        git remote set-url origin https://x-access-token:$GITHUB_TOKEN@github.com/4Bit-Cafe/4bit-utils
         npm version patch
         npm run postversion
         npm publish
