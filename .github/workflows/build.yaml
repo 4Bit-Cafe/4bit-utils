@@ -31,7 +31,7 @@ jobs:
       run: |
         git config --global user.email "bot@4bitcafe.com"
         git config --global user.name "Automated Release"
-        git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/4Bit-Cafe/4bit-utils
+        git remote set-url origin https://x-access-token:$GITHUB_TOKEN@github.com/4Bit-Cafe/4bit-utils
         npm version patch
         npm run postversion
         npm publish
