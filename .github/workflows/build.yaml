@@ -19,7 +19,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.WRITE_TOKEN_CLASSIC }}
       run: |
         cat << EOF > .npmrc
-        @bespoken-ai:registry=https://npm.pkg.github.com
+        @4bit-cafe:registry=https://npm.pkg.github.com
         //npm.pkg.github.com/:_authToken=$GITHUB_TOKEN
         EOF
         npm ci
