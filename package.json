@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Bespoken-AI/4bit-utils.git"
+    "url": "git+https://github.com/4Bit-Cafe/4bit-utils.git"
   },
   "keywords": [
     "utility"
