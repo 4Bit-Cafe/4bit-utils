@@ -11,5 +11,4 @@ jobs:
     if: github.ref == 'refs/heads/main'
     uses: ./.github/workflows/build.yaml
     secrets:
-      SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
       WRITE_TOKEN_CLASSIC: ${{ secrets.WRITE_TOKEN_CLASSIC }}
