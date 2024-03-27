@@ -1,0 +1,1 @@
+{"version":3,"file":"i-base.d.ts","sourceRoot":"","sources":["../../../src/base/interfaces/i-base.ts"],"names":[],"mappings":"AAAA,MAAM,WAAW,kBAAkB;IACjC,MAAM,EAAE,GAAG,CAAC;IACZ,IAAI,EAAE,QAAQ,CAAC;IACf,UAAU,CAAC,EAAE,MAAM,CAAC;IACpB,kBAAkB,CAAC,EAAE,MAAM,CAAC;IAC5B,UAAU,CAAC,EAAE,MAAM,CAAC;CACrB"}
