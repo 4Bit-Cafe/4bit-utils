@@ -13,16 +13,10 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: Build client library
-      id: build-lib
-      env:
-        GITHUB_TOKEN: ${{ secrets.WRITE_TOKEN_CLASSIC }}
-      run: |
-        cat << EOF > .npmrc
-        @4bit-cafe:registry=https://npm.pkg.github.com
-        //npm.pkg.github.com/:_authToken=$GITHUB_TOKEN
-        EOF
-        npm ci
+     - uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+          registry-url: 'https://npm.pkg.github.com'
         
     - name: Publish 
       id: publish-lib
@@ -31,4 +25,7 @@ jobs:
         git config --global user.name "Automated Release"
         npm version patch
         npm run postversion
-        npm publish
+
+    - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.WRITE_TOKEN_CLASSIC }}
