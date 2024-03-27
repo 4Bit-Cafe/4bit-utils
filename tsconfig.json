@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "lib": ["es6", "dom"],
+    "types": ["node"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "outDir": "./dist",
+    "declaration": true,
+    "declarationMap": true,
+    "strictPropertyInitialization": false,
+    "noImplicitReturns": false,
+    "esModuleInterop": true,  
+  },
+  "include": ["src/**/*"]
+}
