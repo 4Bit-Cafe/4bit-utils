@@ -33,7 +33,7 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
-    "@aws-sdk/client-cloudwatch-logs": "^3.496.0",
+    "@aws-sdk/client-cloudwatch-logs": "^3.600.0",
     "@slack/webhook": "^7.0.2",
     "chalk": "^4.1.2",
     "debug": "^4.3.4",
