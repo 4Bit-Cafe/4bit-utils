@@ -1,5 +1,6 @@
 import { Logger } from './logger/logger.index';
 import { BaseObject } from './base/base.index';
 import { SlackNotification } from './notifications/slack';
-export { Logger, BaseObject, SlackNotification };
+import * as Encryption from './security/encrypt';
+export { Logger, BaseObject, SlackNotification, Encryption };
 //# sourceMappingURL=index.d.ts.map
